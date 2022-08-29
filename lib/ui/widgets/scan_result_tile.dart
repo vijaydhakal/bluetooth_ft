@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import '../terminal_screen.dart';
+import '../screen/terminal_screen.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../../core/constants/colors/colors.dart';
@@ -91,12 +91,12 @@ class ScanResultTile extends StatelessWidget{
       leading: Text(result.rssi.toString()),
       trailing: GFButton(
         onPressed: (result.advertisementData.connectable) ? onTap : null,
-        child: const Text('CONNECT'),
         type: GFButtonType.outline,
         color: AppColors.searchButton,
         textColor: AppColors.searchButton,
         disabledColor: AppColors.searchButtonDis,
         disabledTextColor: AppColors.searchButtonDis,
+        child: const Text('CONNECT'),
       ),
       children: <Widget>[
         _buildAdvRow(context, 'Complete Local Name', result.advertisementData.localName),

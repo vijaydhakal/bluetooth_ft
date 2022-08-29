@@ -1,15 +1,14 @@
 import 'dart:io';
-
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'package:bluetooth_ft/screens/widgets/app_loader.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:lottie/lottie.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
-import '../core/constants/styles/styles.dart';
+import '../../core/constants/styles/styles.dart';
+import '../widgets/app_loader.dart';
+
 
 class BluetoothOffScreen extends StatefulWidget {
   final BluetoothState? state;

@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:bluetooth_ft/core/constants/styles/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class AppLoader extends StatelessWidget{
 

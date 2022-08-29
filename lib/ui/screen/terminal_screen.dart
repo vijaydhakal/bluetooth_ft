@@ -1,13 +1,12 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:bluetooth_ft/core/constants/styles/styles.dart';
 import 'package:bluetooth_ft/data/model/command_model.dart';
-import 'package:bluetooth_ft/screens/widgets/app_alert.dart';
 import 'package:intl/intl.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import '../widgets/app_alert.dart';
 
 class TerminalScreen extends StatefulWidget{
 
@@ -170,10 +169,10 @@ class _TerminalScreenState extends State<TerminalScreen>{
                               setState(() {});
                             }
                           },
-                          child: const Icon(LineIcons.paperPlane, color: Colors.white, size: 18,),
                           backgroundColor: Colors.blue,
                           elevation: 5,
                           heroTag: null,
+                          child: const Icon(LineIcons.paperPlane, color: Colors.white, size: 18,),
                         ),
                       ],
                     ),

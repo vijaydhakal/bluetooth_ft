@@ -1,5 +1,5 @@
+import 'package:bluetooth_ft/ui/widgets/app_loader.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:bluetooth_ft/screens/widgets/app_loader.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class AppLoaderDialog{
